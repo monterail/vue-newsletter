@@ -1,0 +1,123 @@
+@import 'https://fonts.googleapis.com/css?family=Dosis:400,600';
+
+body {
+  font-family: 'Dosis', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.newsletter-logo {
+  max-height: 170px;
+}
+
+.newsletter-title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 20px;
+}
+
+.newsletter {
+  max-width: calc(100% - 40px);
+  text-align: center;
+  margin-top: -100px;
+  color: #35495e;
+}
+
+.revue-form-group {
+  position: relative;
+}
+
+.revue-form-field {
+  border: 1px solid #ddd;
+  border-radius: 300px;
+  height: 50px;
+  padding-right: 100px;
+  padding-left: 20px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+  width: 100%;
+}
+
+.revue-form-button {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  border: none;
+  border-radius: 300px;
+  background: #41B883;
+  color: #fff;
+  height: 42px;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.15s ease;
+  padding: 0 25px;
+}
+
+@media (min-width: 1000px) {
+  .revue-form-field {
+    height: 60px;
+    padding-left: 30px;
+    font-size: 20px;
+    min-width: 550px;
+  }
+
+  .revue-form-button {
+    height: 52px;
+    font-size: 20px;
+  }
+}
+
+.revue-form-field:focus,
+.revue-form-field:hover {
+  outline: none;
+}
+
+.revue-form-field:hover {
+  border-color: #bbb;
+}
+
+.revue-form-field:focus {
+  border-color: #41B883;
+}
+
+.revue-form-button:hover,
+.revue-form-button:focus {
+  background: #2f865f;
+}
+
+.revue-form-button:focus,
+.revue-form-button:active {
+  outline: none;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  color: #98a2ad;
+}
+
+.footer a {
+  color: #41B883;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.monterail-link {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  vertical-align: middle;
+  margin-top: -5px;
+}

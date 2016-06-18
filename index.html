@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vue.js Newsletter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="vue-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="styles.css" media="screen" charset="utf-8">
+    <meta name="description" content="Vue.js Newsletter">
+  </head>
+  <body>
+    <div class="newsletter">
+      <img class="newsletter-logo" src="vue-logo.png" alt="Vue.js logo" />
+      <h1 class="newsletter-title">Vue.js Newsletter</h1>
+      <p class="newsletter-description">
+        Weekly dose of handpicked Vue.js news!
+      </p>
+
+      <div id="revue-embed" class="signup">
+        <form action="https://www.getrevue.co/profile/damiandulisz/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
+          <div class="revue-form-group">
+            <input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email">
+            <input class="revue-form-button" type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
+          </div>
+        </form>
+      </div>
+    </div>
+    <p class="footer">
+      Created by <a href="https://twitter.com/DamianDulisz" target="_blank">@damiandulisz</a>. Proudly supported by <a href="http://monterail.com" target="_blank"><img src="monterail-logo.png" class="monterail-link"/>@monterail</a>.
+    </p>
+  </body>
+</html>
