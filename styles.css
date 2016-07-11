@@ -12,6 +12,7 @@ body {
 
 .newsletter-logo {
   max-height: 124px;
+  max-width: 100%;
 }
 
 .newsletter-title {
