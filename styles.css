@@ -17,7 +17,7 @@ body {
 .newsletter-title {
   font-weight: 400;
   font-size: 48px;
-  line-height: 20px;
+  margin: 0;
 }
 
 .newsletter {
