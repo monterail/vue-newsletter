@@ -11,7 +11,7 @@ body {
 }
 
 .newsletter-logo {
-  max-height: 170px;
+  max-height: 124px;
 }
 
 .newsletter-title {
@@ -71,6 +71,10 @@ body {
   .revue-form-button {
     height: 52px;
     font-size: 20px;
+  }
+
+  .newsletter-logo {
+    max-height: 184px;
   }
 }
 
