@@ -10,9 +10,19 @@ body {
   min-height: 100vh;
 }
 
+.body--issues {
+  position: relative;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
+
 .newsletter-logo {
   max-height: 124px;
   max-width: 100%;
+}
+
+.newsletter-logo--small {
+  max-width: 50%;
 }
 
 .newsletter-title {
@@ -28,6 +38,37 @@ body {
   color: #35495e;
 }
 
+.newsletter--issues {
+  margin-top: 10px;
+}
+
+.newsletter__previous {
+  margin-top: 22px;
+}
+
+.newsletter__previous a {
+  color: #41B883;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.newsletter-issues {
+  list-style-type: none;
+  padding: 0;
+}
+.newsletter-issues__item {
+  margin-bottom: 10px;
+}
+.newsletter-issues__link {
+  color: #41B883;
+  text-decoration: none;
+}
+@media (max-width: 1000px) {
+  .newsletter--issues .newsletter-title {
+      font-size: 24px;
+  }
+
+}
 .revue-form-group {
   position: relative;
 }
