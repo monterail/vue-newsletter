@@ -7,7 +7,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
 }
 
 .body--issues {
@@ -16,9 +15,39 @@ body {
   box-sizing: border-box;
 }
 
+.content {
+  display: flex;
+  padding: 30px;
+}
+
+.content-read {
+  height: 140px;
+  width: 400px;
+  background-color: #3FB984;
+  opacity: .65;
+  border-radius: 300px;
+  margin-right: 15px;
+}
+
+.content-listen {
+  height: 140px;
+  width: 400px;
+  background-color: #31485d;
+  opacity: .7;
+  border-radius: 300px;
+}
+
+.content-title {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 0px;
+}
+
 .newsletter-logo {
   max-height: 124px;
   max-width: 100%;
+  margin-top: 120px;
+  
 }
 
 .newsletter-logo--small {
@@ -42,14 +71,10 @@ body {
   margin-top: 10px;
 }
 
-.newsletter__previous {
-  margin-top: 22px;
-}
-
 .newsletter__previous a {
-  color: #41B883;
+  font-size: 22px;
+  color:#263849;
   text-decoration: none;
-  font-weight: 600;
 }
 
 .newsletter-issues {
@@ -63,12 +88,38 @@ body {
   color: #41B883;
   text-decoration: none;
 }
+
 @media (max-width: 1000px) {
   .newsletter--issues .newsletter-title {
       font-size: 24px;
   }
-
 }
+
+@media (max-width: 700px) {
+  .content {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content-read {
+    display: block;
+    margin: 0 auto;
+    width: 320px;
+    margin-bottom: 10px;
+  }
+  .content-listen {
+    display: block;
+    margin: 0 auto;
+    width: 320px;
+  }
+}
+
+.podcast-subscribe {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #87D1B0;
+  text-decoration: underline;
+}
+
 .revue-form-group {
   position: relative;
 }
@@ -118,6 +169,7 @@ body {
   .newsletter-logo {
     max-height: 184px;
   }
+
 }
 
 .revue-form-field:focus,
@@ -144,10 +196,6 @@ body {
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   display: block;
   text-align: center;
   font-size: 16px;
@@ -166,4 +214,11 @@ body {
   width: 30px;
   vertical-align: middle;
   margin-top: -5px;
+}
+
+.vuemastery-logo {
+  height: 20px;
+  width: 30px;
+  padding-right: 3px;
+  padding-top: 6px;
 }
